@@ -1,0 +1,120 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero textarea{
+    width: 600px;
+    height: 250px;
+    /* top: 50%;
+    left: 50%; */
+    background: #403d84;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    border: 5;
+    border-color: #5f5ba3;
+    outline: 0;
+    resize: none;
+    margin-bottom: 30px;
+        
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;   
+}
+
+.row button{
+  /* margin-top: 20px;
+  margin-left: 50px; */
+  font-size: 16px;
+  border-radius: 35px;
+  padding: 10px 30px;
+  background:  #ff2963;
+  color: #fff;
+  border: 2;
+  border-color: #db335f;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+ .row button .fa-solid{
+    width: 16px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    border-radius: 35px;
+    padding: 0 20px;
+    height: 50px;
+     
+    border: 5;
+    border-color: #5f5ba3;
+    outline: 0;
+     appearance: none;   
+     background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px; 
+     background-position-x: calc(100%-50px); 
+     background-position-y: 20px;  
+      /* align-items: right; */
+    /* background-position: right; */
+    background-position: 408px;
+   
+   
+
+ 
+}
+/* .row select .fa-solid{
+    width: 16px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+} */
+
+
+
+
+
+div .selector{
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-color: #8b8a8a;
+    
+    background: transparent;
+    color: #fff;
+}
+.hero h1{
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top:-50px;
+    font-weight:500;
+    font-size: 45px;
+}
+.hero h1 span{
+    color: #ff2963;
+}
