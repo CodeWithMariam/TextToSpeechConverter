@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let speech = new SpeechSynthesisUtterance();
 
 let voices = [];
@@ -19,4 +20,27 @@ voiceSelect.addEventListener("change",function(){
 document.querySelector("button").addEventListener("click", function() {
     speech.text=document.querySelector("textarea").value;
     window.speechSynthesis.speak(speech);
+=======
+let speech = new SpeechSynthesisUtterance();
+
+let voices = [];
+
+let voiceSelect = document.querySelector("select");
+
+window.speechSynthesis.onvoiceschanged = function()  {
+    voices = window.speechSynthesis.getVoices();
+    speech.voice = voices[0];
+
+    voices.forEach((voice, i) => (voiceSelect.options[i] = new Option(voice.
+    name, i)))
+};
+
+voiceSelect.addEventListener("change",function(){
+    speech.voice = voices[voiceSelect.value];
+});
+
+document.querySelector("button").addEventListener("click", function() {
+    speech.text=document.querySelector("textarea").value;
+    window.speechSynthesis.speak(speech);
+>>>>>>> 37f257bbadfedabf474bab775b4313e7f9e94e56
 });
